@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url('../fonts/OpenSans/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: "Open Sans Light";
+    src: url('../fonts/OpenSans/OpenSans-Light.ttf');
+}
+html, body {
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 90px;
+     background-color: #212343;
+}
+.header img {
+    margin: 15px;
+}
+
+.center {
+    width: 1280px;
+    margin: 0 auto;
+}
+.center h2 {
+    font-weight: normal;
+    color: white;
+    line-height: 90px;
+}
+.container-banner {
+    width: 100%;
+    height: 557px;
+    background-image: url('../img/bg-banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.container-banner > .center {
+    height: 100%;
+}
+
+.form {
+    width: 400px;
+    height: calc(100% + 30px);
+    background-color:white;
+    float: right;
+    position: relative;
+    top: -15px;
+    border: 8px solid #ccc;
+}
+.form h2 {
+    font-size: 21px;
+    font-weight: normal;
+    color: #212343;
+    padding: 8px;
+    font-family: "Open Sans Light";
+    line-height: 30px;
+}
+.input-container {
+    margin-top: 20px;
+    padding: 8px;
+}
+.input-container span, .alerta  {
+    display: inline-block;
+    width: 100%;
+    color: #AAA;
+    font-size: 17px;
+
+}
+.input-container span::after {
+    content: " *";
+}
+.input-container input[type=text], .input-container input[type=email], .input-container [type=tel] {
+    margin-top: 8px;
+    width: 344px;
+    height: 55px;
+    padding-left: 5px;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.alerta {
+    padding: 8px;
+}
+.form .input-submit-container {
+    text-align: center;
+}
+.input-submit-container input[type=submit]{
+    width: 280px;
+    height: 56px;
+    background-color: #363A6D;
+    color: white;
+    border: none;
+    display: inline-block;
+    font-size: 20px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    cursor: pointer;
+    border-bottom: 5px solid #4A5097;
+}
+.form input[type=submit]::hover {
+    background-color: #323665;
+}
