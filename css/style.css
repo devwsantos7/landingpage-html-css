@@ -17,6 +17,9 @@ html,
 body {
   height: 100%;
 }
+.clear {
+  clear: both;
+}
 
 .header {
   min-width: 1200px;
@@ -182,10 +185,11 @@ p {
     text-align: center;
 }
 .container-icones {
-    width: 33.33%;
+    width: 33.3%;
     float: left;
     padding: 30px;
 }
+
 .container-icones p {
     padding: 10px 25px;
     text-align: justify;
@@ -193,4 +197,13 @@ p {
 }
 .container-icones img {
     width: 70px;
+}
+.footer {
+  padding: 20px 0;
+  text-align: center;
+  color: #888;
+  border-top: 2px solid #4a5097;
+}
+.footer p {
+  color: inherit;
 }
